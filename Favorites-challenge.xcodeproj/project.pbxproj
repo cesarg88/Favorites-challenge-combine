@@ -13,6 +13,7 @@
 		338A3EDF2683455600543982 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338A3EDE2683455600543982 /* Preview Assets.xcassets */; };
 		338A3EEA2683455600543982 /* Favorites_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338A3EE92683455600543982 /* Favorites_challengeTests.swift */; };
 		338A3EF52683455600543982 /* Favorites_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338A3EF42683455600543982 /* Favorites_challengeUITests.swift */; };
+		338A3F06268356B600543982 /* GetFavoritesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338A3F05268356B600543982 /* GetFavoritesUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		338A3EF02683455600543982 /* Favorites-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Favorites-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		338A3EF42683455600543982 /* Favorites_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites_challengeUITests.swift; sourceTree = "<group>"; };
 		338A3EF62683455600543982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		338A3F05268356B600543982 /* GetFavoritesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoritesUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,10 @@
 		338A3ED62683455400543982 /* Favorites-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				338A3F042683568A00543982 /* Data */,
+				338A3F032683568200543982 /* Domain */,
+				338A3F022683567A00543982 /* Presentation */,
 				338A3ED72683455400543982 /* Favorites_challengeApp.swift */,
-				338A3ED92683455400543982 /* ContentView.swift */,
 				338A3EDB2683455600543982 /* Assets.xcassets */,
 				338A3EE02683455600543982 /* Info.plist */,
 				338A3EDD2683455600543982 /* Preview Content */,
@@ -128,6 +132,29 @@
 				338A3EF62683455600543982 /* Info.plist */,
 			);
 			path = "Favorites-challengeUITests";
+			sourceTree = "<group>";
+		};
+		338A3F022683567A00543982 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				338A3ED92683455400543982 /* ContentView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		338A3F032683568200543982 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				338A3F05268356B600543982 /* GetFavoritesUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		338A3F042683568A00543982 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 			files = (
 				338A3EDA2683455400543982 /* ContentView.swift in Sources */,
 				338A3ED82683455400543982 /* Favorites_challengeApp.swift in Sources */,
+				338A3F06268356B600543982 /* GetFavoritesUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
